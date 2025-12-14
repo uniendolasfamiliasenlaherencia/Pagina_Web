@@ -1,0 +1,29 @@
+/* Optimizaciones de rendimiento */
+
+/* Prevent layout shift durante carga de imágenes */
+img {
+  display: block;
+}
+
+/* Optimizar fuentes */
+body {
+  font-display: swap;
+}
+
+/* Critical CSS - Estilos por encima de la línea de flotación */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Optimizar animaciones */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
