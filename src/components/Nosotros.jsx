@@ -14,7 +14,7 @@ const Nosotros = () => {
       image: confianzaImg,
       title: "Acompañamiento Cercano",
       description: "Ofrezco una guía personalizada en cada etapa del proceso.",
-      fullText: "Te ofrezco una guía personalizada en cada etapa del proceso legal para que siempre sepas qué está pasando y qué debes hacer. Mi acompañamiento es constante y humano, pensado para resolver tus dudas, darte tranquilidad y evitarte estrés innecesario.\nNo te dejo solo(a) en ningún momento: te explico con claridad cada paso, te ayudo con los trámites y me aseguro de que tomes decisiones informadas que protejan tus intereses y los de tu familia.",
+      fullText: "Te ofrezco una guía personalizada en cada etapa del proceso legal para que siempre sepas qué está pasando y qué debes hacer. Mi acompañamiento es constante y humano, pensado para resolver tus dudas, tus incertidumbres, darte tranquilidad y evitarte estrés innecesario.\nNo te dejo sol@ en ningún momento: te explico con claridad cada paso, te ayudo con los trámites y me aseguro que tus decisiones sean informadas y conscientes que protejan tus intereses y los de tu familia.",
       youtubeId: "Wxn6udR_6GE"
     },
     {
@@ -22,7 +22,7 @@ const Nosotros = () => {
       image: experienciaImg,
       title: "Especialista en Derecho Procesal dedicada al tema herencial",
       description: "Más de 30 años de experiencia resolviendo casos complejos",
-      fullText: "No soy especialista en sucesiones, soy especialista en Derecho Procesal dedicada al tema herencial. Cuento con más de 30 años de experiencia atendiendo casos complejos de sucesiones herenciales. Esto me permite identificar rápidamente los mejores caminos legales, anticipar riesgos y ayudarte a resolver situaciones que, sin una guía experta, pueden volverse largas o conflictivas.\nMi trayectoria me ha permitido acompañar a muchas familias en procesos difíciles, brindando soluciones efectivas, claras y ajustadas a la ley. Mi compromiso radica en hacer que el trámite o proceso sea lo más sencillo, ágil y efectivo para todos los involucrados.",
+      fullText: "Soy especialista en Derecho Procesal dedicada al tema herencial. Cuento con más de 30 años de experiencia atendiendo casos complejos de sucesiones herenciales. Permitiéndome identificar rápidamente los mejores caminos legales, anticipar riesgos y ayudarte a resolver situaciones que, sin una guía experta, pueden volverse largas o conflictivas.\nMi trayectoria me ha permitido acompañar a muchas familias en procesos difíciles, brindando soluciones efectivas, claras y ajustadas a la ley. Mi compromiso radica en hacer que el trámite o proceso sea lo más sencillo, ágil y efectivo para todos los involucrados.",
       youtubeId: "yebNIHKAC4A"
     },
     {
@@ -30,7 +30,7 @@ const Nosotros = () => {
       image: prevencionImg,
       title: "Enfoque para Evitar Conflictos Familiares",
       description: "Trabajo para mantener la armonía y el respeto entre herederos.",
-      fullText: "Mi prioridad es proteger la armonía familiar. Por eso trabajo con un enfoque preventivo que busca evitar discusiones, desacuerdos y problemas entre herederos.\nTe acompaño para que cada decisión se tome con respeto, claridad y transparencia, ayudando a mediar cuando es necesario y asegurando que el proceso avance sin tensiones.\nMi propósito es que la familia conserve la unión y que el trámite legal se desarrolle de manera justa, ordenada y pacífica.",
+      fullText: "Mi prioridad es proteger la armonía familiar. Por eso trabajo con un enfoque preventivo que busca evitar discusiones, desacuerdos y problemas entre herederos.\nTe acompaño para que cada decisión se tome con respeto, claridad y transparencia, ayudando a mediar cuando es necesario y asegurando que el proceso avance sin tensiones.\nMi Objetivo es la Unidad familiar con trámites legales justos, efectivos y pacíficos.",
       youtubeId: "C3GouGa0noM"
     }
   ];
@@ -38,7 +38,7 @@ const Nosotros = () => {
   return (
     <div id="nosotros" className="bg-white w-full py-16">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-10" style={{ color: '#304B52' }}>Por qué confiar en nosotros</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-10" style={{ color: '#304B52' }}>¿Por qué confiar en mi?</h1>
         <p className="text-base md:text-xl text-center mb-12 text-gray-700">Acompaño cada proceso con dedicación y profesionalismo.</p>
         
         {/* Las 3 tarjetas en una sola fila */}

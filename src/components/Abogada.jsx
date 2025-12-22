@@ -9,33 +9,35 @@ export default function Abogada() {
   return (
     <section
       id="abogada"
-      className="w-full min-h-[60vh] flex flex-col md:flex-row items-center justify-center bg-white px-4 py-8 md:py-16"
+      className="w-full min-h-[60vh] flex flex-col md:flex-row items-center justify-center bg-white px-4 py-8 md:py-16 gap-8"
     >
       {/* Columna de imagen */}
-      <div ref={refImage} className={`flex justify-center items-center px-0 md:px-8 py-6 order-1 basis-1/2 ${inViewImage ? 'animate-slide-left' : 'opacity-0'}`}>
+      <div ref={refImage} className={`flex justify-center items-center order-1 w-full md:basis-1/2 ${inViewImage ? 'animate-slide-left' : 'opacity-0'}`}>
         <LazyImage
           src={abogadaImg}
           alt="Abogada"
-          className="w-100 h-auto rounded-lg"
+          className="w-[540px] h-auto rounded-lg object-cover"
         />
       </div>
       {/* Columna de texto */}
-      <div ref={refText} className={`flex flex-col justify-center items-start text-center md:text-left px-0 md:px-8 py-6 basis-1/2 order-2 ${inViewText ? 'animate-slide-right' : 'opacity-0'}`}>
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight" style={{ color: '#304B52' }}>
+      <div ref={refText} className={`flex flex-col justify-start items-start text-center md:text-left w-full md:basis-1/2 order-2 ${inViewText ? 'animate-slide-right' : 'opacity-0'}`}>
+        <h3 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight" style={{ color: '#304B52' }}>
           Abogada.
-          <br />
-          Monroy Castro.
-        </h1>
+        </h3>
+        <h4 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 md:mb-8 leading-tight" style={{ color: '#304B52' }}>
+          Ana Consuelo Monroy Castro.
+        </h4>
+        <div>
         <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 text-gray-700">
-          Especialista en Sucesiones y Planificación Patrimonial Herencial, dedicada al tema herencial con: asesoría y diagnóstico, acompañando la realización del testamento, la planificación familiar herencial, solucionando la herencia pendiente, realizando la Herencia Anticipada o Partición de Patrimonio en Vida.
+          Especialista en Derecho Procesal dedicada al tema Herencial realizando: la  asesoría y el diagnóstico, el testamento, la planificación familiar herencial, solucionando la herencia pendiente, realizando la Herencia Anticipada o Partición de Patrimonio en Vida.
           <br className="hidden md:block" />
         </p>
         <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 text-gray-700">
-         Mi enfoque combina rigor jurídico con acompañamiento humano: escucho, explico las opciones con lenguaje claro y guío cada paso para que las decisiones sean conscientes y preserven la unidad familiar. Trabajo con discreción y respeto, poniendo siempre la tranquilidad de la familia como prioridad.
+          Mi enfoque combina el rigor jurídico eficiente con acompañamiento humano: escucho, explico las opciones con lenguaje claro y guío cada paso para que tus decisiones sean informadas, conscientes y preserven la unidad familiar. Trabajo con discreción y respeto, poniendo siempre la tranquilidad de la familia como prioridad.
           <br className="hidden md:block" />
         </p>
         <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 text-gray-700">
-          Creo que dejar todo en orden es un acto de responsabilidad y cariño.
+          Creo en dejar todo en orden como acto de responsabilidad y amor.
           <br className="hidden md:block" />
           Mi propósito es acompañarte con claridad, respeto y discreción para que ese proceso se haga de forma práctica, humana y sin sorpresas.
         </p>
@@ -72,6 +74,7 @@ export default function Abogada() {
           }
           texto="Prevención antes que litigio."
         />
+        </div>
         <a
           href="#contacto"
           className="text-white font-semibold px-4 py-2 md:px-6 md:py-3 rounded-md shadow-lg transition text-sm md:text-base"

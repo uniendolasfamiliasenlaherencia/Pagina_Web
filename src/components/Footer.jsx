@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Línea separadora */}
         <div className="border-t border-teal-700 mt-8 pt-8">
           <p className="text-center text-sm text-gray-300">
-            &copy; 2025 Monroy Abogados. Todos los derechos reservados.
+            &copy; 2026 Uniendolasfamiliasenlaherencia. Todos los derechos reservados.
           </p>
         </div>
       </div>
