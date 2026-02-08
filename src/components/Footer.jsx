@@ -81,7 +81,7 @@ export default function Footer() {
 
             {/* YouTube */}
             <a
-              href="https://www.youtube.com"
+              href="https://www.youtube.com/@UniendoLasFamiliasenLaHerencia"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-200 transition"

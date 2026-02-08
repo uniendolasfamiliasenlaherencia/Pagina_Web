@@ -15,15 +15,19 @@ const Nosotros = () => {
       title: "Acompañamiento Cercano",
       description: "Ofrezco una guía personalizada en cada etapa del proceso.",
       fullText: "Te ofrezco una guía personalizada en cada etapa del proceso legal para que siempre sepas qué está pasando y qué debes hacer. Mi acompañamiento es constante y humano, pensado para resolver tus dudas, tus incertidumbres, darte tranquilidad y evitarte estrés innecesario.\nNo te dejo sol@ en ningún momento: te explico con claridad cada paso, te ayudo con los trámites y me aseguro que tus decisiones sean informadas y conscientes que protejan tus intereses y los de tu familia.",
-      youtubeId: "Wxn6udR_6GE"
+      youtubeIds: ["xBj9qGnK2F4"],
+      youtubeTypes: ["short"],
+      videoLayout: "auto"
     },
     {
       orangeTitle: "Experiencia",
       image: experienciaImg,
-      title: "Especialista en Derecho Procesal dedicada al tema herencial",
+      title: "Derecho Procesal dedicada al tema herencial",
       description: "Más de 30 años de experiencia resolviendo casos complejos",
       fullText: "Soy especialista en Derecho Procesal dedicada al tema herencial. Cuento con más de 30 años de experiencia atendiendo casos complejos de sucesiones herenciales. Permitiéndome identificar rápidamente los mejores caminos legales, anticipar riesgos y ayudarte a resolver situaciones que, sin una guía experta, pueden volverse largas o conflictivas.\nMi trayectoria me ha permitido acompañar a muchas familias en procesos difíciles, brindando soluciones efectivas, claras y ajustadas a la ley. Mi compromiso radica en hacer que el trámite o proceso sea lo más sencillo, ágil y efectivo para todos los involucrados.",
-      youtubeId: "yebNIHKAC4A"
+      youtubeIds: ["1W15xqVEdCA", "0ZZqxQLGeGQ"],
+      youtubeTypes: ["video", "short"],
+      videoLayout: "auto"
     },
     {
       orangeTitle: "Prevención",
@@ -31,7 +35,9 @@ const Nosotros = () => {
       title: "Enfoque para Evitar Conflictos Familiares",
       description: "Trabajo para mantener la armonía y el respeto entre herederos.",
       fullText: "Mi prioridad es proteger la armonía familiar. Por eso trabajo con un enfoque preventivo que busca evitar discusiones, desacuerdos y problemas entre herederos.\nTe acompaño para que cada decisión se tome con respeto, claridad y transparencia, ayudando a mediar cuando es necesario y asegurando que el proceso avance sin tensiones.\nMi Objetivo es la Unidad familiar con trámites legales justos, efectivos y pacíficos.",
-      youtubeId: "C3GouGa0noM"
+      youtubeIds: ["AJSgbm07xWc", "T_y9Cq5GfZw"],
+      youtubeTypes: ["short", "short"],
+      videoLayout: "auto"
     }
   ];
 
@@ -53,7 +59,9 @@ const Nosotros = () => {
                 title={valor.title}
                 description={valor.description}
                 fullText={valor.fullText}
-                youtubeId={valor.youtubeId}
+                youtubeIds={valor.youtubeIds}
+                youtubeTypes={valor.youtubeTypes}
+                videoLayout={valor.videoLayout}
               />
             ))}
             
@@ -66,7 +74,9 @@ const Nosotros = () => {
                 title={valores[2].title}
                 description={valores[2].description}
                 fullText={valores[2].fullText}
-                youtubeId={valores[2].youtubeId}
+                youtubeIds={valores[2].youtubeIds}
+                youtubeTypes={valores[2].youtubeTypes}
+                videoLayout={valores[2].videoLayout}
                 isLarge={true}
                 imageRight={false}
               />

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 /**
  * Componente LazyImage para cargar imágenes de forma perezosa (lazy loading)
@@ -6,13 +6,13 @@ import { useState, useRef, useEffect } from 'react';
  */
 export default function LazyImage({ src, alt, className = '', style = {}, isLarge = false }) {
   const [imageSrc, setImageSrc] = useState(null);
-  const [imageRef, setImageRef] = useState(null);
+  const imageRef = useRef(null);
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     let observer;
 
-    if (imageRef && typeof window !== 'undefined') {
+    if (imageRef.current && typeof window !== 'undefined') {
       // Crear el observador para detectar cuando la imagen es visible
       observer = new IntersectionObserver(
         (entries) => {
@@ -28,19 +28,19 @@ export default function LazyImage({ src, alt, className = '', style = {}, isLarg
         }
       );
 
-      observer.observe(imageRef);
+      observer.observe(imageRef.current);
     }
 
     return () => {
-      if (observer && imageRef) {
-        observer.unobserve(imageRef);
+      if (observer && imageRef.current) {
+        observer.unobserve(imageRef.current);
       }
     };
-  }, [imageRef, src]);
+  }, [src]);
 
   return (
     <img
-      ref={setImageRef}
+      ref={imageRef}
       src={imageSrc}
       alt={alt}
       className={`${className} ${isLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}

@@ -3,7 +3,7 @@ import LazyImage from "./LazyImage";
 import arrowIcon from '../img/arrow-right.svg';
 import TextModal from "./TextModal";
 
-const ConflictCard = ({ image, orangeTitle, title, description, fullText, whiteBadge = false, textButton = "Leer más" }) => {
+const ConflictCard = ({ image, orangeTitle, title, description, fullText, youtubeId, youtubeIds = [], youtubeTypes = [], videoLayout = 'auto', whiteBadge = false, textButton = "Leer más" }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	return (
@@ -12,6 +12,10 @@ const ConflictCard = ({ image, orangeTitle, title, description, fullText, whiteB
 				isOpen={isModalOpen}
 				title={title}
 				content={fullText || description}
+				youtubeIds={youtubeIds}
+				youtubeId={youtubeId}
+				youtubeTypes={youtubeTypes}
+				videoLayout={videoLayout}
 				onClose={() => setIsModalOpen(false)}
 			/>
 			<div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white border-2 flex flex-col self-start" style={{ borderColor: '#C47A59', minHeight: '500px' }}>
