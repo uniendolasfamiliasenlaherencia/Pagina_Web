@@ -2,7 +2,7 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 // Inicializar EmailJS con tu Public Key
-emailjs.init('B3Y6Goto-YNi_fKZ6');
+emailjs.init('wkJZsyWlfDeugfGsX');
 
 export const useEmailJS = () => {
   const [loading, setLoading] = useState(false);
@@ -17,8 +17,8 @@ export const useEmailJS = () => {
     try {
       // Enviar email usando el template "Contact Us"
       const response = await emailjs.send(
-        'service_bey43tz', // Tu Service ID
-        'template_tszbsg6', // Template ID del Contact Us
+        'service_bt9a81k', // Tu Service ID
+        'template_tifwwm4', // Template ID del Contact Us
         {
           name: nombre,
           email: email,

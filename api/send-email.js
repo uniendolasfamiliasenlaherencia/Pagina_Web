@@ -35,7 +35,7 @@ export default async function handler(req, res) {
     // Enviar email a ti (administrador)
     const adminResponse = await resend.emails.send({
       from: 'onboarding@resend.dev', // Email de prueba de Resend (cambia cuando tengas dominio)
-      to: 'anyyelo6941@gmail.com', // Email de la abogada
+      to: 'uniendolasfamiliasenlaherencia@gmail.com', // Email de la abogada
       subject: `Nueva consulta de ${nombre}`,
       html: `
         <h2>Nueva consulta recibida</h2>
